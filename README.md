@@ -8,19 +8,19 @@ An end-to-end Machine Learning application that classifies consumer complaints u
 
 The **Neural Audit Terminal** is designed for high-efficiency auditing. It uses three different AI engines to provide a consensus-based classification.
 
-## Terminal IDLE State
+## Terminal IDLE 
 - The initial state of the Neural Audit Terminal before a scan is initiated.
 ---
 ![Dashboard Idle](assets/dashboard_idle.png)
 ---
 
-## High-Consensus Result
+## IDLE: High Consensus
 - When all active engines (Logistic Regression, SVM, and Naive Bayes) agree on the classification, the system flags a high-confidence consensus.
 ---
 ![High Consensus](assets/dashboard_consensus_high.png)
 ---
 
-## Low-Consensus Result
+## IDLE: Low Consensus 
 - In cases where the models disagree or return low probability scores, the terminal alerts the auditor to perform a manual review.
 ---
 ![Low Consensus](assets/dashboard_consensus_low.png)
