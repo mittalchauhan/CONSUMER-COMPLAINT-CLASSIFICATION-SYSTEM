@@ -1,4 +1,4 @@
-# CONSUMER-COMPLAINT-CLASSIFICATION-SYSTEM
+# 🗂️ CONSUMER-COMPLAINT-CLASSIFICATION-SYSTEM 
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![Flask](https://img.shields.io/badge/flask-2.0+-lightgrey.svg)
