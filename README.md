@@ -26,12 +26,6 @@ The **Neural Audit Terminal** is designed for high-efficiency auditing. It uses 
 ![Low Consensus](assets/dashboard_consensus_low.png)
 ---
 
-## System Architecture
-- The application follows a modular microservice-style architecture. The Frontend (HTML/JS) sends text data to a Flask API, which processes the text through pre-trained Scikit-Learn pipelines.
----
-![Architecture Diagram](assets/Diagram.jpg)
----
-
 ##  Features
 * **Ensemble Scoring:** Uses Logistic Regression, SVM, and Naive Bayes simultaneously.
 * **Real-time Signal Extraction:** Identifies key "Impact Words" that triggered the AI's decision.
