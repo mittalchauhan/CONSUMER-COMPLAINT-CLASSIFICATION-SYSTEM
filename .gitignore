@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Environments
+venv/
+env/
+.env
+
+# Large Data Files (Keep these on your local machine)
+consumer_complaints.csv
+consumer_complaints.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db
