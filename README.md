@@ -1,4 +1,4 @@
-# SFI-Neural-Audit-Terminal
+# 🏗️ CONSUMER-COMPLAINT-CLASSIFICATION-SYSTEM:SFI-Neural-Audit-Terminal
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![Flask](https://img.shields.io/badge/flask-2.0+-lightgrey.svg)
@@ -9,9 +9,17 @@ An end-to-end Machine Learning application that classifies consumer complaints u
 ## Dashboard Overview
 The **Neural Audit Terminal** is designed for high-efficiency auditing. It uses three different AI engines to provide a consensus-based classification.
 
-| Idle State | High Consensus Result |
-| :--- | :--- |
-| ![Dashboard Idle](dashboard_idle.png) | ![High Consensus](dashboard_consensus_high.png) |
+### Terminal Idle State
+The initial state of the Neural Audit Terminal before a scan is initiated.
+![Dashboard Idle](dashboard_idle.png)
+
+### High Consensus Result
+When all active engines (Logistic Regression, SVM, and Naive Bayes) agree on the classification, the system flags a high-confidence consensus.
+![High Consensus](dashboard_consensus_high.png)
+
+### Low/Disputed Result
+In cases where the models disagree or return low probability scores, the terminal alerts the auditor to perform a manual review.
+![Low Consensus](dashboard_consensus_low.png)
 
 ## System Architecture
 The application follows a modular microservice-style architecture. The Frontend (HTML/JS) sends text data to a Flask API, which processes the text through pre-trained Scikit-Learn pipelines.
@@ -33,7 +41,8 @@ The application follows a modular microservice-style architecture. The Frontend 
 ##  Installation & Usage
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   git clone <repo-url>
+   cd <repo-folder>
    ```
 2. **Install dependencies:**
 
