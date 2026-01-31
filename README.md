@@ -1,4 +1,5 @@
-# 🏗️ CONSUMER-COMPLAINT-CLASSIFICATION-SYSTEM:SFI-Neural-Audit-Terminal
+# 🏗️ CONSUMER-COMPLAINT-CLASSIFICATION-SYSTEM
+- **SFI-Neural-Audit-Terminal**
 ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![Flask](https://img.shields.io/badge/flask-2.0+-lightgrey.svg)
@@ -11,20 +12,20 @@ The **Neural Audit Terminal** is designed for high-efficiency auditing. It uses 
 
 ### Terminal Idle State
 The initial state of the Neural Audit Terminal before a scan is initiated.
-![Dashboard Idle](dashboard_idle.png)
+![Dashboard Idle](assets/dashboard_idle.png)
 
 ### High Consensus Result
 When all active engines (Logistic Regression, SVM, and Naive Bayes) agree on the classification, the system flags a high-confidence consensus.
-![High Consensus](dashboard_consensus_high.png)
+![High Consensus](assets/dashboard_consensus_high.png)
 
 ### Low/Disputed Result
 In cases where the models disagree or return low probability scores, the terminal alerts the auditor to perform a manual review.
-![Low Consensus](dashboard_consensus_low.png)
+![Low Consensus](assets/dashboard_consensus_low.png)
 
 ## System Architecture
 The application follows a modular microservice-style architecture. The Frontend (HTML/JS) sends text data to a Flask API, which processes the text through pre-trained Scikit-Learn pipelines.
 
-![Architecture Diagram](architecture_diagram.jpg)
+![Architecture Diagram](assets/architecture_diagram.jpg)
 
 ##  Features
 * **Ensemble Scoring:** Uses Logistic Regression, SVM, and Naive Bayes simultaneously.
@@ -33,10 +34,11 @@ The application follows a modular microservice-style architecture. The Frontend 
 * **Latency Tracking:** Measures backend processing time in milliseconds.
 
 ##  Project Structure
-* `app.py`: The Flask server and prediction API.
-* `templates/index.html`: The Neural Audit Terminal UI.
-* `model_training.ipynb`: The Jupyter Notebook containing data analysis and model training logic.
-* `*.pkl`: Pre-trained model pipelines and encoders.
+* **`app.py`**: The Flask server and prediction API that processes real-time requests.
+* **`index.html`**: The Neural Audit Terminal UI, styled with Bootstrap and powered by vanilla JavaScript.
+* **`Plotly.js`** Provides logic for rendering live probability distributions and historical trends.
+* **`Consumer complaint classification.ipynb`**: The Jupyter Notebook containing data cleaning, exploratory data analysis (EDA), and model training logic.
+* **`*.pkl`**: Pre-trained Scikit-Learn pipelines (Logistic Regression, SVM, Naive Bayes) and Label Encoders.
 
 ##  Installation & Usage
 1. **Clone the repository:**
