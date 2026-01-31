@@ -9,25 +9,25 @@ An end-to-end Machine Learning application that classifies consumer complaints u
 The **Neural Audit Terminal** is designed for high-efficiency auditing. It uses three different AI engines to provide a consensus-based classification.
 
 ## Terminal Idle State
-The initial state of the Neural Audit Terminal before a scan is initiated.
+- The initial state of the Neural Audit Terminal before a scan is initiated.
 ---
 ![Dashboard Idle](assets/dashboard_idle.png)
 ---
 
 ## High Consensus Result
-When all active engines (Logistic Regression, SVM, and Naive Bayes) agree on the classification, the system flags a high-confidence consensus.
+- When all active engines (Logistic Regression, SVM, and Naive Bayes) agree on the classification, the system flags a high-confidence consensus.
 ---
 ![High Consensus](assets/dashboard_consensus_high.png)
 ---
 
 ## Low Consensus Result
-In cases where the models disagree or return low probability scores, the terminal alerts the auditor to perform a manual review.
+- In cases where the models disagree or return low probability scores, the terminal alerts the auditor to perform a manual review.
 ---
 ![Low Consensus](assets/dashboard_consensus_low.png)
 ---
 
 ## System Architecture
-The application follows a modular microservice-style architecture. The Frontend (HTML/JS) sends text data to a Flask API, which processes the text through pre-trained Scikit-Learn pipelines.
+- The application follows a modular microservice-style architecture. The Frontend (HTML/JS) sends text data to a Flask API, which processes the text through pre-trained Scikit-Learn pipelines.
 ---
 ![Architecture Diagram](assets/Diagram.jpg)
 ---
@@ -35,7 +35,7 @@ The application follows a modular microservice-style architecture. The Frontend 
 ##  Features
 * **Ensemble Scoring:** Uses Logistic Regression, SVM, and Naive Bayes simultaneously.
 * **Real-time Signal Extraction:** Identifies key "Impact Words" that triggered the AI's decision.
-* **Consensus Engine:** Automatically flags results as "High Consensus" or "Low/Disputed" based on model agreement.
+* **Consensus Engine:** Automatically flags results as "High Consensus" or "Low" based on model agreement.
 * **Latency Tracking:** Measures backend processing time in milliseconds.
 
 ##  Project Structure
